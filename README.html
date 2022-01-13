@@ -1,0 +1,39 @@
+
+<!-- saved from url=(0049)file:///Users/naomikenyatta/Downloads/README.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><h1 id="crimsontechcomp.github.io">CrimsonTechComp.github.io</h1>
+<h3 id="b0.-windows-user-get-wsl">B0. Windows User: Get WSL!</h3>
+<p>Follow the instructions <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">here</a> and get <strong>Ubuntu</strong>. Then, follow Richard’s email to learn about how to setup a Windows-accessible folder in WSL. From here, use WSL instead of the command line!</p>
+<h3 id="b1.-adding-an-ssh-key.">B1. Adding an SSH key.</h3>
+<p>If you don’t know what an ssh key is, follow these instructions. This step is tricky! <strong>Feel free to call RX/ZS over.</strong></p>
+<p>We need to link the account you just made to your local machine. The ssh key is like the identity of a computer, and is how GitHub knows to trust your machine.</p>
+<p>Run the command <code>ssh-keygen</code> and hit Enter a few times, leaving the files blank. Then, run <code>cat ~/.ssh/id_rsa.pub</code>. You should get a string that goes <code>ssh-rsa [a bunch of characters]</code>. Copy it.</p>
+<p>Go to github, click on your user and go to Settings. Click on <code>SSH and GPG keys</code> and click on <code>New SSH key</code> and paste the key you got into there.</p>
+<h2 id="c.-fork-this-repository.">C. Fork this repository.</h2>
+<p>Come back to <a href="https://github.com/crimtech/crimtech-comp-f20">https://github.com/crimtech/crimtech-comp-f20</a>. You should see a button on the upper right called “Fork”. Click it! Now, you should have your personal copy of this repository.</p>
+<p>Next, you need to <strong>clone</strong> this repository onto your machine. Click on the green <code>code</code> option and copy the string you have there. Then, in your terminal, type in <code>git clone [the string you just received]</code>.</p>
+<p>If you get an error, chances are the SSH key step didn’t work. <strong>Call us over.</strong></p>
+<p><strong>DO NOT CONTINUE UNTIL YOU HAVE DONE STEPS A-C</strong></p>
+<p>We will now install 3 tools: Git, Python and pip. 1. Git, with GitHub, is how you will be submitting your assignments. 2. Python is a programming language. In the lab <code>Snek</code>, you will be programming in Python. We will revisit Python at a later point. 3. <code>pip</code> is the python package manager. You can greatly extend the power of Python with it. We will use it in <code>Snek</code>.</p>
+<h2 id="d.-install-git">D. Install Git</h2>
+<p>Open up your terminal and type in <code>git --version</code>. If you get an error, you need to install Git. Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a> to install it.</p>
+<p>Once you are done, put your git version into <code>lab0-responses.txt</code>.</p>
+<h2 id="e.-install-python">E. Install Python</h2>
+<p>Type in <code>python --version</code>. If you get an error, you need to install Python: follow the instructions below. Otherwise, put your python version into <code>lab0-responses.txt</code></p>
+<h3 id="e1.-macos">E1. MacOS</h3>
+<p>If you are on MacOS, you should check out <code>homebrew</code>. The instruction for getting Python with homebrew is <a href="https://docs.python-guide.org/starting/install3/osx/">here</a>.</p>
+<h3 id="e2.-linux">E2. Linux</h3>
+<p>You can download python from the website, or use <code>sudo apt-get install python3.6</code>.</p>
+<h2 id="f.-install-pip">F. Install <code>pip</code></h2>
+<p>Type in <code>pip --version</code>. If you get an error, you need to install <code>pip</code>. Follow the instructions <a href="https://pip.pypa.io/en/stable/installing/">here</a>. Once you are done, put your pip version into <code>lab0-responses.txt</code></p>
+<p><strong>DO NOT CONTINUE UNTIL YOU HAVE DONE STEPS D-F</strong></p>
+<h2 id="g.-making-a-commit">G. Making a Commit</h2>
+<p>You are now ready to submit. First, run <code>git status</code>. This will show you all the files you have changed in the directory.</p>
+<p>Run the command <code>git add -A</code>, then <code>git commit -m "Submit intro lab."</code> You should get something that goes <code>[master ******] Submit intro lab...</code>.</p>
+<p>At this step, Git may ask you to set your username/email. If so, follow those instructions or call us over.</p>
+<h2 id="h.-push-the-commit">H. Push the commit</h2>
+<p>The change you just made is still living on your local machine. How do you upload them to GitHub? Run the command <code>git push</code>. Then, go onto your github repository. You should see some changes there!</p>
+<h2 id="i.-submit">I. Submit</h2>
+<p>There should be a button now called “pull request” or “make pull request”. Click on it!</p>
+<p>Put in a title and a description, which can be anything you want. Then, hit “open pull request” or something like that.</p>
+<p>Once that’s done, you are done! Congratulations on finishing your first lab :D</p>
+</body></html>
