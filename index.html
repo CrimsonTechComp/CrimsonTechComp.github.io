@@ -2,10 +2,18 @@
 
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link href="src/styles.css" rel="stylesheet">
 
   </head>
   <body>
+    <!-- navbar -->
+    <div id="nav-placeholder"></div><script>$(function(){  $("#nav-placeholder").load("Pages/nav.html");});</script>
+<div class ="main">
     <h1> Welcome to the Crimson tech comp! </h1>
     Fill out our interest form here:
 
@@ -14,7 +22,10 @@
     After 2 weeks in (9/26), we will email only people who filled out the forms as to prevent spam. So, please fill them out :)
     To locally host this website run python -m http.server
     </p>
+    <center>
+      <a href="Pages/Introduction.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Continue</a>
+    </center>
 
-    <a href="Pages/Introduction.html" class="next">Next &raquo;</a>
+    </div>
   </body>
 </html>
