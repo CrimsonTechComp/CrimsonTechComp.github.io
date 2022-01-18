@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/src/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a class="active" href="Introduction.html">Github</a>
+      <div class="dropdown">
+        <button class="dropbtn">Python
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Pages/Python.html">Basics</a>
+          <a href="/Pages/Libraries.html">Numpy+Pandas</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Assignments
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Pages/Introduction.html">Assignments 1: Github</a>
+          <a href="/Pages/Python.html">Assignments 2</a>
+          <a href="/Pages/Scraping.html">Assignments 3: Scraping</a>
+          <a href="#">Assignments 4</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="main">
+
+    <h1>Numpy </h1>
+    <p> There will be two main libraries we will use for understanding our data. The first one we will learn about is Numpy.
+    We learned about lists in the introduction to python, but using the built in python lists doesn't come with all
+  the nice tools and speed that numpy arrays have. To use numpy you need to first install it using pip if you have not already.
+  You should navigate to the terminal and type in </p>
+  <pre><code>pip install numpy</code></pre>
+    <h2>Understanding array</h2>
+    <p>Now that we have numpy download we can use it when coding in python.</p>
+    <pre><code>import numpy as np
+    a = np.array([2, 3, 4])</code></pre>
+
+  <p> array transforms sequences of sequences into two-dimensional arrays, sequences of sequences of sequences into three-dimensional arrays, and so on</p>
+  <p> Try testing out the above code. What is inside a. Also try using other imputs into array. When applying operations to arrays
+  it is applied element wise</p>
+  <pre><code>import numpy as np
+  a = np.array([2, 3, 4])
+  b = np.array([1, 5, 6])
+  c = a*b;
+  </code></pre>
+  <p> At the end of this code c will hold the array [2,15,24] which is different than normal matrix multiplication</p>
+  <p>some useful properties of arrays: </p>
+  <p>- a.shape gives you the size of the array</p>
+  <p>- a[:,4] < 5 is a boolean statement which will output an array comparing each number in a to 5 and returning true of false</p>
+  <p>- a.ravel() will turn any array into a 1 dimensional array</p>
+  <p>- a.ravel() will turn any array into a 1 dimensional array</p>
+  <h1>Pandas </h1>
+  <p> The second library is pandas similarly to numpy it comes with nice tools and speed. We need to first install it using pip if you have not already.
+You should navigate to the terminal and type in </p>
+<pre><code>pip install pandas</code></pre>
+  <h2>Understanding array</h2>
+  <p>Now that we have numpy download we can use it when coding in python.</p>
+  <pre><code>import numpy as np
+  a = np.array([2, 3, 4])</code></pre>
+
+<p> array transforms sequences of sequences into two-dimensional arrays, sequences of sequences of sequences into three-dimensional arrays, and so on</p>
+<p> Try testing out the above code. What is inside a. Also try using other imputs into array. When applying operations to arrays
+it is applied element wise</p>
+<pre><code>import numpy as np
+a = np.array([2, 3, 4])
+b = np.array([1, 5, 6])
+c = a*b;
+</code></pre>
+<p> At the end of this code c will hold the array [2,15,24] which is different than normal matrix multiplication</p>
+<p>some useful properties of arrays: </p>
+<p>- a.shape gives you the size of the array</p>
+<p>- a[:,4] < 5 is a boolean statement which will output an array comparing each number in a to 5 and returning true of false</p>
+<p>- a.ravel() will turn any array into a 1 dimensional array</p>
+<p>- a.ravel() will turn any array into a 1 dimensional array</p>
+  </div>
+    <!-- BootStrap Shit -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -5,24 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="/src/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/src/styles.css" rel="stylesheet">
 
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-danger">
-    <span class="navbar-brand mb-0 h1">Crimson Tech Comp
-      <a href="Introduction.html" style="color: black margin-left: 10px">Github</a>
-      <a href="Python.html" style="color: black margin-left: 10px">Python</a>
-      <a href="Scraping.html" style="color: black margin-left: 10px">Scraping</a>
-      <a href="#" style="color: black margin-left: 10px">Data Science</a>
-    </span>
-    </nav>
-  <div class="main">
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a class="active" href="Introduction.html">Github</a>
+      <div class="dropdown">
+        <button class="dropbtn">Python
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Pages/Python.html">Basics</a>
+          <a href="/Pages/Libraries.html">Numpy+Pandas</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Assignments
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Pages/Introduction.html">Assignments 1: Github</a>
+          <a href="/Pages/Python.html">Assignments 2</a>
+          <a href="/Pages/Scraping.html">Assignments 3: Scraping</a>
+          <a href="#">Assignments 4</a>
+        </div>
+      </div>
+    </div>
   <h1>Introduction to Python</h1>
   <p>This page will serve more as informational and a resource for compers and members to find useful review and information on how to code in python.
   Python comes automatically with your computer so its easy to get started. There are a few different IDE's that we recommed, but you can check out that page
   seperately. </p>
+
   <h2> The Basics: Strings, Printing and Variables</h2>
   <p>Printing in python is pretty easy</p>
   <pre><code>print("Hello World"); </code></pre>
@@ -54,6 +70,7 @@
 </table>
 </center>
 
+
 <h2> Loops and Conditionals</h2>
 <h3> If Statements</h3>
 <p>If you want to execute certain commands of code with conditionals than If Statements are your friend</p>
@@ -73,8 +90,7 @@
 <h3> While Loops</h3>
 <p>While loops allow you to execute the same piece of code over and over until one condition is met</p>
 <pre>
-<code>
-  answer = false;
+<code>answer = false;
   While !answer:
     print("answer meeeee");
 </code>
@@ -83,8 +99,7 @@
 <h3> For Loops</h3>
 <p>for loops allow you to execute the same piece of code a set amount of times</p>
 <pre>
-<code>
-  for i in range(7):
+<code>for i in range(7):
     print(i);
 </code>
 </pre>
@@ -100,16 +115,30 @@ Pro Tip: Make sure that the csv is in the same folder as the file you are coding
   df = pd.read_csv ('file_name.csv')
   print(df)</code>
 </pre>
-
-
+<h3> Try Except</h3>
+<p>Some times your code will throw an error, but you know what you want to happen when that error occurs.
+In try except you can try a piece of code and then instead of exiting when an error is thrown.
+The program will catch a certain error and then you can choose what to do. This is a very similar to an if else conditional. </p>
+<pre><code>Try:
+      results[0].text.strip()
+  Except Attribute Error:
+      #what should it do if you get this error. Maybe figure out what is causing this error.
+</code></pre>
 
   </div>
+  <h3>Links to more information</h3>
+  <p>There are many resources for your questions to be answered. Here are some great links to resources on the following information. </p>
+  <a href="https://www.w3schools.com/python/python_variables.asp">1. Variables</a> <p></p>
+  <a href="https://www.w3schools.com/python/python_conditions.asp">2. if statements</a><p></p>
+  <a href="https://www.w3schools.com/python/python_for_loops.asp">3. for loops</a><p></p>
+  <a href="https://www.w3schools.com/python/python_while_loops.asp">4. While Loops</a><p></p>
+  <a href="https://www.w3schools.com/python/python_functions.asp">5. Functions</a><p></p>
+  <a href="https://www.w3schools.com/python/python_lists.asp">6. Lists</a><p></p>
+  <a href="https://www.w3schools.com/python/python_dictionaries.asp">7. Dictionaries</a><p></p>
+  <a href="https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3">8. Imports</a><p></p>
+  <a href="https://www.w3schools.com/python/python_classes.asp">9. classes</a><p></p>
+  <a href="https://www.w3schools.com/python/python_conditions.asp">10. </a>
 
-    <!-- BootStrap Shit -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>

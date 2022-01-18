@@ -4,20 +4,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/src/styles.css" rel="stylesheet">
 
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-danger">
-    <span class="navbar-brand mb-0 h1">Crimson Tech Comp
-      <a href="Introduction.html" style="color: black margin-left: 10px">Github</a>
-      <a href="Python.html" style="color: black margin-left: 10px">Python</a>
-      <a href="Scraping.html" style="color: black margin-left: 10px">Scraping</a>
-      <a href="#" style="color: black margin-left: 10px">Data Science</a>
-    </span>
-    </nav>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a class="active" href="Introduction.html">Github</a>
+      <div class="dropdown">
+        <button class="dropbtn">Python
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Pages/Python.html">Basics</a>
+          <a href="/Pages/Libraries.html">Numpy+Pandas</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Assignments
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Pages/Introduction.html">Assignments 1: Github</a>
+          <a href="/Pages/Python.html">Assignments 2</a>
+          <a href="/Pages/Scraping.html">Assignments 3: Scraping</a>
+          <a href="#">Assignments 4</a>
+        </div>
+      </div>
+    </div>
 
   <div class="main">
 
@@ -46,7 +61,6 @@
       <li> Python is a programming language. </li>
       <li> Pip is the python package manager. You can greatly extend the power of Python with it.</li>
     </ol>
-
     <h2 id="d.-install-git">D. Install Git</h2>
     <p>Open up your terminal and type in <code>git --version</code>. If you get an error, you need to install Git. Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a> to install it.</p>
     <p>Once you are done, put your git version into <code>lab0-responses.txt</code>.</p>
@@ -76,7 +90,6 @@
     <p>There should be a button now called <i> pull request</i> or <i>make pull request</i>. Click on it!</p>
     <p>Put in a title and a description, which can be anything you want. Then, hit <i>open pull request</i> or something like that.</p>
     <p>Once that is done, you are done! Congratulations on finishing your first lab :D</p>
-    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
     <p>For more general information about github cs61 has some great explanations here https://cs61.seas.harvard.edu/site/ref/git/</p>
     <p>by Naomi Kenyatta and Richard Xu</p>
   </div>
