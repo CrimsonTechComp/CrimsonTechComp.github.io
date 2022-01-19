@@ -4,36 +4,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js">
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="/src/styles.css" rel="stylesheet">
-
   </head>
   <body>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a class="active" href="Introduction.html">Github</a>
-      <div class="dropdown">
-        <button class="dropbtn">Python
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Python.html">Basics</a>
-          <a href="/Pages/Libraries.html">Numpy+Pandas</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Assignments
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Introduction.html">Assignments 1: Github</a>
-          <a href="/Pages/Python.html">Assignments 2</a>
-          <a href="/Pages/Scraping.html">Assignments 3: Scraping</a>
-          <a href="#">Assignments 4</a>
-        </div>
-      </div>
-    </div>
+  <div id = "navigation"></div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('#navigation').load('/nav.html');
+  });
+  </script>
+  
+  <div class="main">
+
   <h1>Introduction to Python</h1>
   <p>This page will serve more as informational and a resource for compers and members to find useful review and information on how to code in python.
   Python comes automatically with your computer so its easy to get started. There are a few different IDE's that we recommed, but you can check out that page
@@ -124,21 +109,26 @@ The program will catch a certain error and then you can choose what to do. This 
   Except Attribute Error:
       #what should it do if you get this error. Maybe figure out what is causing this error.
 </code></pre>
+<h3>Links to more information</h3>
+<p>There are many resources for your questions to be answered. Here are some great links to resources on the following information. </p>
+<a href="https://www.w3schools.com/python/python_variables.asp">1. Variables</a> <p></p>
+<a href="https://www.w3schools.com/python/python_conditions.asp">2. if statements</a><p></p>
+<a href="https://www.w3schools.com/python/python_for_loops.asp">3. for loops</a><p></p>
+<a href="https://www.w3schools.com/python/python_while_loops.asp">4. While Loops</a><p></p>
+<a href="https://www.w3schools.com/python/python_functions.asp">5. Functions</a><p></p>
+<a href="https://www.w3schools.com/python/python_lists.asp">6. Lists</a><p></p>
+<a href="https://www.w3schools.com/python/python_dictionaries.asp">7. Dictionaries</a><p></p>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3">8. Imports</a><p></p>
+<a href="https://www.w3schools.com/python/python_classes.asp">9. classes</a><p></p>
+<a href="https://www.w3schools.com/python/python_conditions.asp">10. </a>
 
   </div>
-  <h3>Links to more information</h3>
-  <p>There are many resources for your questions to be answered. Here are some great links to resources on the following information. </p>
-  <a href="https://www.w3schools.com/python/python_variables.asp">1. Variables</a> <p></p>
-  <a href="https://www.w3schools.com/python/python_conditions.asp">2. if statements</a><p></p>
-  <a href="https://www.w3schools.com/python/python_for_loops.asp">3. for loops</a><p></p>
-  <a href="https://www.w3schools.com/python/python_while_loops.asp">4. While Loops</a><p></p>
-  <a href="https://www.w3schools.com/python/python_functions.asp">5. Functions</a><p></p>
-  <a href="https://www.w3schools.com/python/python_lists.asp">6. Lists</a><p></p>
-  <a href="https://www.w3schools.com/python/python_dictionaries.asp">7. Dictionaries</a><p></p>
-  <a href="https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3">8. Imports</a><p></p>
-  <a href="https://www.w3schools.com/python/python_classes.asp">9. classes</a><p></p>
-  <a href="https://www.w3schools.com/python/python_conditions.asp">10. </a>
 
-
+    <!-- BootStrap Shit -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

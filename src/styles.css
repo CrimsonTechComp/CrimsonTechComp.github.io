@@ -98,7 +98,16 @@ pre code {
 /* Style page content */
 .main {
   margin-top: 3em;
-  margin-left: 150px; /* Same as the width of the sidebar */
-  margin-right: 150px; /* Same as the width of the sidebar */
+  margin-left: 150px;
+  margin-right: 150px;
   padding: 0px 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    margin-top: 3em;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0px 10px;
+  }
 }

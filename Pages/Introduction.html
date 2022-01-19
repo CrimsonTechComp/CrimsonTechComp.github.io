@@ -4,36 +4,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/src/styles.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/src/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a class="active" href="Introduction.html">Github</a>
-      <div class="dropdown">
-        <button class="dropbtn">Python
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Python.html">Basics</a>
-          <a href="/Pages/Libraries.html">Numpy+Pandas</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Assignments
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Introduction.html">Assignments 1: Github</a>
-          <a href="/Pages/Python.html">Assignments 2</a>
-          <a href="/Pages/Scraping.html">Assignments 3: Scraping</a>
-          <a href="#">Assignments 4</a>
-        </div>
-      </div>
-    </div>
-
+  <div id = "navigation"></div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('#navigation').load('/nav.html');
+  });
+  </script>
   <div class="main">
 
     <h1> Introduction to Github </h1>
