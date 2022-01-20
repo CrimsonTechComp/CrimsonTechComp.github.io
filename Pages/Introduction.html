@@ -10,51 +10,9 @@
 <link href="/src/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="navbar">
-      <a href="/home">Home</a>
-      <a class="active" href="Introduction.html">Github</a>
-      <div class="dropdown">
-        <button class="dropbtn">Python
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Python.html">Basics</a>
-          <a href="/Pages/Libraries.html">Numpy+Pandas</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Web Design
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Introduction.html">Graphs</a>
-          <a href="/Pages/Python.html">Figma</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Web Devolempent
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Introduction.html">React</a>
-          <a href="/Pages/Python.html">django</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Assignments
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Pages/Introduction.html">Assignments 1: Github</a>
-          <a href="/Pages/Python.html">Assignment 2: Python</a>
-          <a href="/Pages/Scraping.html">Assignment 3: Scraping</a>
-          <a href="/Pages/DataAnalysis.html">Assignment 4: Data Analysis</a>
-          <a href="#">Assignment 5: Graphs</a>
-          <a href="#">Assignment 6: React</a>
-          <a href="#">Assignment 6: React part 2</a>
-        </div>
-      </div>
-    </div>
+    <script src="/src/nav.js"></script>
+    <div w3-include-html="/src/nav.html"></div>
+    <script> includeHTML();</script>
 
   <div class="main">
 
