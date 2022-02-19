@@ -2,131 +2,265 @@
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js">
-</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="/src/styles.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/src/styles.css" rel="stylesheet" />
   </head>
   <body>
     <script src="/src/nav.js"></script>
     <div w3-include-html="/src/nav.html"></div>
-    <script> includeHTML();</script>
+    <script>
+      includeHTML();
+    </script>
 
+    <div class="main">
+      <h1>Introduction to Python</h1>
+      <p>
+        This page will serve more as informational and a resource for compers
+        and members to find useful review and information on how to code in
+        python. Python comes automatically with your computer so its easy to get
+        started. There are a few different IDE's that we recommed, but you can
+        check out that page seperately.
+      </p>
 
-  <div class="main">
+      <h2>The Basics: Strings, Printing and Variables</h2>
+      <p>Printing in python is pretty easy</p>
+      <pre><code>print("Hello World"); </code></pre>
+      <p>
+        So now lets say that you have a variable. Each variable has a type that
+        python automatically knows when you give it a value. The most common
+        types are
+      </p>
+      <center>
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Examples</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>Bool</td>
+            <td>True or False</td>
+            <td>Boolean</td>
+          </tr>
+          <tr>
+            <td>Float</td>
+            <td>3.4</td>
+            <td>real numbers that have a decimal point</td>
+          </tr>
+          <tr>
+            <td>int</td>
+            <td>1</td>
+            <td>intergers</td>
+          </tr>
+          <tr>
+            <td>str</td>
+            <td>"Mexico"</td>
+            <td>strings</td>
+          </tr>
+          <tr>
+            <td>list</td>
+            <td>[1,2,"hi"]</td>
+            <td>list objects</td>
+          </tr>
+          <tr>
+            <td>tuple</td>
+            <td>(1,2)</td>
+            <td>just 2 vlaues</td>
+          </tr>
+        </table>
+      </center>
+      <p>
+        Python can preform many different types of operations for us on ints and
+        floats. Such as
+      </p>
+      <center>
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Symbol</th>
+          </tr>
+          <tr>
+            <td>Add</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>Subtract</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Multiply</td>
+            <td>*</td>
+          </tr>
+          <tr>
+            <td>Exponent</td>
+            <td>**</td>
+          </tr>
+          <tr>
+            <td>divide and get a decimal</td>
+            <td>/</td>
+          </tr>
+          <tr>
+            <td>divide and get a rounded down interger</td>
+            <td>//</td>
+          </tr>
+          <tr>
+            <td>Modulo</td>
+            <td>%</td>
+          </tr>
+        </table>
+      </center>
 
-  <h1>Introduction to Python</h1>
-  <p>This page will serve more as informational and a resource for compers and members to find useful review and information on how to code in python.
-  Python comes automatically with your computer so its easy to get started. There are a few different IDE's that we recommed, but you can check out that page
-  seperately. </p>
-
-  <h2> The Basics: Strings, Printing and Variables</h2>
-  <p>Printing in python is pretty easy</p>
-  <pre><code>print("Hello World"); </code></pre>
-  <p>So now lets say that you have a variable. Each variable has a type that python automatically knows when you give it a value.
-  The most common types are</p>
-  <center>
-  <table>
-  <tr> <th>Type</th> <th> Examples</th> <th> Explanation</th> </tr>
-  <tr> <td>Bool</td> <td> True or False </td> <td> Boolean</td></tr>
-  <tr> <td>Float</td><td>3.4</td><td>real numbers that have a decimal point</td></tr>
-  <tr><td>int</td><td>1</td><td>intergers</td></tr>
-  <tr><td>str</td><td>"Mexico"</td><td>strings</td></tr>
-  <tr><td>list</td><td>[1,2,"hi"]</td><td>list objects</td></tr>
-  <tr><td>tuple</td><td>(1,2)</td><td>just 2 vlaues</td></tr>
-</table>
-</center>
-  <p> Python can preform many different types of operations for us on ints and floats. Such as
-  </p>
-  <center>
-  <table>
-  <tr> <th>Type</th> <th> Symbol</th> </tr>
-  <tr> <td>Add</td> <td> + </td></tr>
-  <tr> <td>Subtract</td> <td> - </td></tr>
-  <tr> <td>Multiply</td> <td> * </td></tr>
-  <tr> <td>Exponent</td> <td> ** </td></tr>
-  <tr> <td>divide and get a decimal</td> <td> / </td></tr>
-  <tr> <td>divide and get a rounded down interger</td> <td> // </td></tr>
-  <tr> <td>Modulo</td> <td> % </td></tr>
-</table>
-</center>
-
-
-<h2> Loops and Conditionals</h2>
-<h3> If Statements</h3>
-<p>If you want to execute certain commands of code with conditionals than If Statements are your friend</p>
-<pre>
+      <h2>Loops and Conditionals</h2>
+      <h3>If Statements</h3>
+      <p>
+        If you want to execute certain commands of code with conditionals than
+        If Statements are your friend
+      </p>
+      <pre>
 <code>  x = 1
   y = 2
   if x < y:
-    print("hi");
+    print("hi")
   elif x > y:
-    print("yooo");
+    print("yooo")
   else:
-    print("we equal dude");
+    print("we equal dude")
 </code>
 </pre>
-<p>Important to remember is that indentation tells python what should be executed if the condition is observered.</p>
+      <p>
+        Important to remember is that indentation tells python what should be
+        executed if the condition is observered.
+      </p>
 
-<h3> While Loops</h3>
-<p>While loops allow you to execute the same piece of code over and over until one condition is met</p>
-<pre>
+      <h3>While Loops</h3>
+      <p>
+        While loops allow you to execute the same piece of code over and over
+        until one condition is met
+      </p>
+      <pre>
 <code>answer = false;
-  While !answer:
-    print("answer meeeee");
+while !answer:
+  print("answer meeeee")
 </code>
 </pre>
-<p>This piece of code will run forever because the variable in the condition never changes and can't become false.</p>
-<h3> For Loops</h3>
-<p>for loops allow you to execute the same piece of code a set amount of times</p>
-<pre>
+      <p>
+        This piece of code will run forever because the variable in the
+        condition never changes and can't become false.
+      </p>
+      <h3>For Loops</h3>
+      <p>
+        for loops allow you to execute the same piece of code a set amount of
+        times
+      </p>
+      <pre>
 <code>for i in range(7):
-    print(i);
+  print(i);
 </code>
 </pre>
-<p>This code will print the numbers 1 through 7. After the word in for loops can take any type of list which will be useful in
-data anaylsis.</p>
+      <p>
+        This code will print the numbers 1 through 7. After the word in for
+        loops can take any type of list which will be useful in data anaylsis.
+      </p>
 
-<h3> Files</h3>
-<p>Most of the time the data that we get will either be in a csv or webscraped.
-If you want to work with a csv you have to import it. Most of the time we will be working with something called a dataframe from pandas.
-Pro Tip: Make sure that the csv is in the same folder as the file you are coding in for easiest acess</p>
-<pre>
-<code>  import pandas as pd
-  df = pd.read_csv ('file_name.csv')
-  print(df)</code>
+      <h3>Files</h3>
+      <p>
+        Most of the time the data that we get will either be in a csv or
+        webscraped. If you want to work with a csv you have to import it. Most
+        of the time we will be working with something called a dataframe from
+        pandas. Pro Tip: Make sure that the csv is in the same folder as the
+        file you are coding in for easiest acess
+      </p>
+      <pre>
+        <code>with open("file_name") as f:
+  s = f.read()</code>
 </pre>
-<h3> Try Except</h3>
-<p>Some times your code will throw an error, but you know what you want to happen when that error occurs.
-In try except you can try a piece of code and then instead of exiting when an error is thrown.
-The program will catch a certain error and then you can choose what to do. This is a very similar to an if else conditional. </p>
-<pre><code>Try:
-      results[0].text.strip()
-  Except Attribute Error:
-      #what should it do if you get this error. Maybe figure out what is causing this error.
+      <pre>
+<code>import pandas as pd
+df = pd.read_csv ('file_name.csv')
+print(df)</code>
+</pre>
+      <h3>Try Except</h3>
+      <p>
+        Some times your code will throw an error, but you know what you want to
+        happen when that error occurs. In try except you can try a piece of code
+        and then instead of exiting when an error is thrown. The program will
+        catch a certain error and then you can choose what to do. This is a very
+        similar to an if else conditional.
+      </p>
+      <pre><code>Try:
+  results[0].text.strip()
+Except Attribute Error:
+  #what should it do if you get this error. Maybe figure out what is causing this error.
 </code></pre>
-<h3>Links to more information</h3>
-<p>There are many resources for your questions to be answered. Here are some great links to resources on the following information. </p>
-<a href="https://www.w3schools.com/python/python_variables.asp">1. Variables</a> <p></p>
-<a href="https://www.w3schools.com/python/python_conditions.asp">2. if statements</a><p></p>
-<a href="https://www.w3schools.com/python/python_for_loops.asp">3. for loops</a><p></p>
-<a href="https://www.w3schools.com/python/python_while_loops.asp">4. While Loops</a><p></p>
-<a href="https://www.w3schools.com/python/python_functions.asp">5. Functions</a><p></p>
-<a href="https://www.w3schools.com/python/python_lists.asp">6. Lists</a><p></p>
-<a href="https://www.w3schools.com/python/python_dictionaries.asp">7. Dictionaries</a><p></p>
-<a href="https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3">8. Imports</a><p></p>
-<a href="https://www.w3schools.com/python/python_classes.asp">9. classes</a><p></p>
-<a href="https://www.w3schools.com/python/python_conditions.asp">10. </a>
-
-  </div>
+      <h3>Links to more information</h3>
+      <p>
+        There are many resources for your questions to be answered. Here are
+        some great links to resources on the following information.
+      </p>
+      <a href="https://www.w3schools.com/python/python_variables.asp"
+        >1. Variables</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_conditions.asp"
+        >2. if statements</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_for_loops.asp"
+        >3. for loops</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_while_loops.asp"
+        >4. While Loops</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_functions.asp"
+        >5. Functions</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_lists.asp">6. Lists</a>
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_dictionaries.asp"
+        >7. Dictionaries</a
+      >
+      <p></p>
+      <a
+        href="https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3"
+        >8. Imports</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_classes.asp"
+        >9. classes</a
+      >
+      <p></p>
+      <a href="https://www.w3schools.com/python/python_conditions.asp">10. </a>
+    </div>
 
     <!-- BootStrap Shit -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
