@@ -19,6 +19,9 @@
     <h1> Introduction to Github </h1>
     <p> We are so excited to start our Spring '23 Comp for Crimson Tech!</p>
 
+    <h2>Accompanying Slides</h2>
+    The slides for this lab, which explain this in a bit more detail, can be found <a href="https://docs.google.com/presentation/d/1nag_7CnuN6f8naBqguAlhu_sgR_1TTHVfYvY3NLVZdU/edit?usp=sharing">here</a>!
+
     <h2 id="a.-github.">A. GitHub account</h2>
     <p> We will be communicating through GitHub. If you don't have a GitHub account, please sign up at <a href="https://github.com/">https://github.com/</a> </p>
     <h4>Only for Window Users: Get WSL!</h4>
@@ -29,48 +32,28 @@
     <p>We need to link the account you just made to your local machine. The ssh key is like the identity of a computer, and is how GitHub knows to trust your machine.</p>
     <p>Run the command <code>ssh-keygen</code> and hit Enter a few times, leaving the files blank. Then, run <code> cat ~/.ssh/id_rsa.pub </code>. You should get a string that goes <code>ssh-rsa [a bunch of characters]</code>. Copy it.</p>
     <p>Go to github, click on your user and go to Settings. Click on <code>SSH and GPG keys</code> and click on <code>New SSH key</code> and paste the key you got into there.</p>
-    <h2 id="c.-fork-this-repository.">C. Fork this repository.</h2>
+    <h2 id="c.-install-git">c. Install Git</h2>
+    <p>Open up your terminal and type in <code>git --version</code>. If you get an error, you need to install Git. Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a> to install it.</p> On Mac, you should install XCode Command Line Tools, using <code>xcode-select --install</code>.
+    <h2 id="d.-fork-this-repository.">D. Fork this repository.</h2>
     <p> Go to <a href="https://github.com/CrimsonTechComp/CompAssignmentsS23">https://github.com/CrimsonTechComp/CompAssignmentsS23</a>. You should see a button on the upper right called <b>Fork</b>. Click it! Now, you should have your personal copy of this repository.</p>
     <p>Next, you need to <strong>clone</strong> this repository onto your machine. Click on the green <code> code </code> option and copy the string you have there. Then, in your terminal, type in <code> git clone [the string you just received]</code>. </p>
     <p>If you get an error, chances are the SSH key step did not work. <strong> Call us over. </strong></p>
-    <p><strong>DO NOT CONTINUE UNTIL YOU HAVE DONE STEPS A-C</strong></p>
-    <p>We will now install 3 tools: Git, Python and pip.<p>
-    <ol>
-      <li> Git, with GitHub, is how you will be submitting your assignments. </li>
-      <li> Python is a programming language. </li>
-      <li> Pip is the python package manager. You can greatly extend the power of Python with it.</li>
-    </ol>
-    <h2 id="d.-install-git">D. Install Git</h2>
-    <p>Open up your terminal and type in <code>git --version</code>. If you get an error, you need to install Git. Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a> to install it.</p>
-    <p>Once you are done, put your git version into <code>lab0-responses.txt</code>.</p>
-
-    <h2 id="e.-install-python">E. Install Python</h2>
-    <p>Type in <code>python --version</code>. If you get an error, you need to install Python: follow the instructions below. Otherwise, put your python version into <code>lab0-responses.txt</code></p>
-
-    <h3 id="e1.-macos">E1. MacOS</h3>
-    <p>If you are on MacOS, you should check out <code>homebrew</code>. The instruction for getting Python with homebrew is <a href="https://docs.python-guide.org/starting/install3/osx/">here</a>.</p>
-
-    <h3 id="e2.-linux">E2. Linux</h3>
-    <p>You can download python from the website, or use <code>sudo apt-get install python3.6</code>.</p>
-
-    <h2 id="f.-install-pip">F. Install <code>pip</code></h2>
-    <p>Type in <code>pip --version</code>. If you get an error, you need to install <code>pip</code>. Follow the instructions <a href="https://pip.pypa.io/en/stable/installing/">here</a>. Once you are done, put your pip version into <code>lab0-responses.txt</code></p>
-    <p><strong>DO NOT CONTINUE UNTIL YOU HAVE DONE STEPS D-F</strong></p>
-
-    <h2 id="g.-making-a-commit">G. Making a Commit</h2>
+    <h2 id="e.-making-a-edits">E. Making edits</h2>
+    <p>First run <code>git checkout -b lab1</code> in your terminal. Make sure you're in the directory where you've cloned your repository!</p>
+    <p>Using whatever editor you'd like, now change <code>responses.txt</code> to say whatever you want.</p>
     <p>You are now ready to submit. First, run <code>git status</code>. This will show you all the files you have changed in the directory.</p>
-    <p>Run the command <code>git add -A</code>, then <code>git commit -m "Submit intro lab."</code> You should get something that goes <code>[master ******] Submit intro lab...</code>.</p>
+    <p>Run the command <code>git add -A</code>, then <code>git commit -m "Submit."</code> You should get something that goes <code>[main ******] Submit intro lab...</code>.</p>
     <p>At this step, Git may ask you to set your username/email. If so, follow those instructions or call us over.</p>
 
     <h2 id="h.-push-the-commit">H. Push the commit</h2>
-    <p>The change you just made is still living on your local machine. How do you upload them to GitHub? Run the command <code>git push</code>. Then, go onto your github repository. You should see some changes there!</p>
+    <p>The change you just made is still living on your local machine. How do you upload them to GitHub? Run the command <code>git push --set-upstream origin lab1</code>. Then, go onto your github repository. You won't see the changes there yet - this is because we made them on a <code>branch</code> called <code>lab1</code>. We'll explain more about this next weel. However, you'll see something else!</p>
 
     <h2 id="i.-submit">I. Submit</h2>
-    <p>There should be a button now called <i> pull request</i> or <i>make pull request</i>. Click on it!</p>
+    <p>There should be a button now called <i>Compare & Pull Request</i>. Click on it!</p>
     <p>Put in a title and a description, which can be anything you want. Then, hit <i>open pull request</i> or something like that.</p>
     <p>Once that is done, you are done! Congratulations on finishing your first lab :D</p>
     <p>For more general information about github cs61 has some great explanations here <a href=https://cs61.seas.harvard.edu/site/ref/git/>https://cs61.seas.harvard.edu/site/ref/git</a> </p>
-    <p>by Naomi Kenyatta and Richard Xu</p>
+    <p>by Naomi Kenyatta, Richard Xu, and Kevin Luo</p>
   </div>
 
     <!-- BootStrap Shit -->
