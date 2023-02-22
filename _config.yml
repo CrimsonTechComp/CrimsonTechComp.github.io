@@ -32,6 +32,7 @@ header_pages:
   - webdesign/webdesign.md
   - webdev/webdev.md
   - assignments/assignments.md
+  - random/random.md
 
 # Build settings
 theme: minima
