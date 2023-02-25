@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Assignment 2: Python"
-date:   2023-02-18 11:16:01 -0500
+date:   2023-02-25 11:16:01 -0500
 categories: assignments
 ---   
 
@@ -48,10 +48,10 @@ Write a function that returns the square root of a given variable n. If n is neg
 C3. Random Ints
 --------------
 
-Write a program that randomly generates numbers in the range \[1,10\] and appends them to a list, until it generates a 6, at which point it appends that to the list and returns. Put your code in `random_ints.py`.
+Write a program that randomly generates numbers in the range \[1,10\] and appends them to a `list`, _until it generates a 6_, at which point it appends that to the list and returns. Put your code in `random_ints.py`.
 
 _HINT: Look into the `random` library_  
-_HINT: what does `(int) (random.random()\*10)` generate?_
+_HINT: what does `int(random.random()*10)` generate?_
 
 C4. Remove Smallest
 ------------------
@@ -69,6 +69,8 @@ Output:
 
 C5. Optional
 -----------
+
+Create a file `companies.py`.
 
 Define a class to represent companies. Companies will have a name (given at creation), a list of all sales for the year (string of a product), and a dictionary of products (strings, keys) and their prices (float like, values), as well as a list of employees. Define a function to add a new product. The function will take the name of the product and the price. Define a function to add an employee, given an employee. Define an employee class. Employees will have a name as a string, and a company, both given at creation. They will also have a role given at creation. A role is represented by a number, with 1 being a new hire, and 10 the ceo. Make the role value optional, with the default set to 1.
 
