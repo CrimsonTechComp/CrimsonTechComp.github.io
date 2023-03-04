@@ -14,7 +14,7 @@ You are welcome to work with other compers but everyone should submit there own 
 A. Terminal
 -----------
 
-Open up your terminal. We are going to navigate to your forked crimtech repository (the one you cloned last week). Through the terminal using `cd crimtech-comp-s23` . Now you should be inside your repository. Now type in `git pull upstream main` . Now your repository should be up to date. It can be tricky working with the terminal and git so make sure to ask NK or KL if you get an error message. If you have a merge conflict make sure to edit the file where the conflict occcurs and git commit before trying to pull again.
+Open up your terminal. We are going to navigate to your forked crimtech repository (the one you cloned last week). Through the terminal, you can do this using `cd [your cloned folder name]` . Now you should be inside your repository. Now type in `git pull upstream main`. Now your repository should be up to date. It can be tricky working with the terminal and git so make sure to ask NK or KL if you get an error message. If you have a merge conflict make sure to edit the file where the conflict occcurs and git commit before trying to pull again.
 
 B1. IDE
 ------
