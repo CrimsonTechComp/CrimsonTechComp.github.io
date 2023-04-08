@@ -10,7 +10,7 @@ Everything below can be found in the GitHub repository, inside the `lab.md` for 
 
 Quick note to start: We will be working inside this directory (the directory containing `lab.md`) the entire time. Whenever there is a command saying run `python manage.py ...`, you will need to run it from this directory as well, since this is the directory containing `manage.py`.
 
-You will need to update your local repository, as usual. The instructions for that are located here: `https://crimsontechcomp.github.io/Pages/Submitting.html`
+You will need to update your local repository, as usual. The instructions for that are locate on this site.
 
 ## What is Django?
 
@@ -28,7 +28,7 @@ Most of the initial setup has been done for you.
 
 ## Writing a view and routing
 
-We will first write a barebones view and route to it. We will not be covering Django templates because most of that is taken care of by React on the site, with a very small number of exceptions (one of them is `https://www.thecrimson.com/columns/opinion` - can you tell that the page is different?). 
+We will first write a barebones view and route to it. We will not be covering Django templates because most of that is taken care of by React on the site, with a very small number of exceptions (one of them is `https://www.thecrimson.com/columns/opinion` - can you tell that the page is different?).
 
 Place in `content/views.py`: 
 ```python
